@@ -1,0 +1,253 @@
+body, html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  }
+
+
+
+
+
+
+
+
+
+.fixed-header {
+  z-index: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 1200px;
+  height:100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+  background-image: url('images/Mt_Akadake_centered.jpg');
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-transition {
+  z-index: 0;
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  width: 1200px;
+  height:50px;
+  margin: 0 auto;
+
+
+  background-image: url('images/Mt_Akadake_centered.jpg');
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
+
+
+.title {
+  padding: 60px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+
+
+.top-header {
+  background-color: white;
+  position: relative;
+  height: 150px;
+  text-align: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.top-header h1 {
+  padding-top: 50px;
+  color: rgb(121 166 234);
+}
+
+
+
+.transition {
+  position: relative;
+  display: block;
+  height: 200px;
+  z-index: 1;
+  pointer-events: none;
+
+  background: linear-gradient(white, rgba(255,255,255,0));
+
+}
+
+body {
+  
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url('images/Mt_Akadake_centered.jpg');
+  z-index: -1;
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.grid-layout {
+  display: grid;
+  grid-template-rows: 200px 400px 200px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.about-me > div {
+  margin:20px;
+  background-color: #e7bfa0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  background-color: #e7bfa0;
+  margin: 100px;
+
+}
+
+.socials img {
+  border-radius:50%;
+  width:200px;
+}
+
+.main-spacer {
+
+}
+
+.projects {
+  background-color: #e7bfa0;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+
+
+
+.window {
+  /* The image used */
+  
+  position: relative;
+  z-index: -1;
+  /* Full height */
+  height: 150px; 
+}
+
+.main-section {
+  height: 1000px;
+
+  margin: 50px;
+  margin-bottom: 0px;
+
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.bottom-spacer {
+  height: 50px;
+}
+
+.footer {
+  height: 30px;
+  background-color: rgb(121 166 234);
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container{
+    width:100%;
+  }
+
+  .fixed-header{
+    width:100%;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size:30px;
+  }
+
+  .fixed-header{
+    flex-direction: column;
+    font-size: 16px;
+    height: 150px;
+  }
+
+  .fixed-transition {
+    top: 150px;
+  }
+
+  .title {
+    padding:20px;
+  }
+
+  .navigation {
+    margin: 0px;
+  }
+}
