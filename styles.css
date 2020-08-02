@@ -156,19 +156,19 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 50px;
+  overflow:hidden;
 }
 
-.about-me > div {
+.skills-list {
   margin:20px;
   background-color: #e7bfa0;
   display: flex;
   justify-content: space-between;
-}
+  align-items: center;
+ }
 
 .socials {
   background-color: #e7bfa0;
-  margin: 100px;
-
 }
 
 .socials img {
