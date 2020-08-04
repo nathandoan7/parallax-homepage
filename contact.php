@@ -12,14 +12,6 @@
 	$body .= "\r\n Email: " . $userEmail;
 	$body .= "\r\n Message: " . $userMessage;
 
-	if (mail($to, $subject, $body))
-	{
-	    echo "Message accepted";
-	}
-	else
-	{
-	    echo "Error: Message not accepted";
-	}
 
-	header("Location: index.html");
+	header("Location: https://doanprojects.com/#about-anchor");
 ?>

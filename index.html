@@ -3,8 +3,10 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" content="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 	</head>
 
@@ -14,13 +16,13 @@
 			<div class="fixed-header">
 				<div class="title">
 					<h2>DivineHTML.com</h2>
-					<h4>Freelance Web Development</h4>
+					<h3 id="subtitle">Freelance Web Development</h3>
 				</div>
 				<div class="navigation">
 					<ul>
 						<li><a href="#about-anchor">About</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contacts">Contact</a></li>
+						<li><a href="#projects-anchor">Projects</a></li>
+						<li><a href="#contacts-anchor">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -36,39 +38,56 @@
 			<div class="transition">
 			</div>
 
-			<div class="window"></div>
+			<div class="window">
+				<img src="images/scroll_arrow_sticker.gif">
+			</div>
 
-			<div id="about-anchor" class="anchor"></div>
+
 			<div class="main-section">
+							<div id="about-anchor" class="anchor"></div>
 				<div class="about-me">
-					
-					<div class="skills-list">
 
-						<ul>
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>Javascript</li>
-							<li>PHP</li>
-						</ul>
 
-						<ul>
-							<li>Wordpress</li>								
-							<li>MySQL</li>
-							<li>Python</li>
-							<li>C# / ASP.NET</li>
-						</ul>
+					<div class="left-column">
+						<h3 style="text-decoration: underline;">About Me</h3>
+						<p>Full-stack web developer building websites for small businesses.  I am looking to take on a couple of projects for free in order to build my reputation and my portfolio.</p>
+						<br>
+						<p>I will build you a site that the customer won't forget - beautiful, practical, easy to navigate, and representing the best your businesss has to offer.</p>
+						<br>
+						<p>Download my resume <a target="_blank" href="Nathan-Doan-Resume.pdf">here</a></p>
+						<br> 
+						<a href="#" class="fa fa-instagram"></a>
+						<a href="#" class="fa fa-youtube"></a>
+						<a href="#" class="fa fa-twitter"></a>
+
+
+
 					</div>
 					<div class="socials">
 						<img id="social_img" src="images\profile_pic.jpg">
 						<br>
-						<h3>Find me on Twitter and Instagram</h3>
-						<a target="_blank" href="#">Twitter: @doanprojects</a>
-						<br>
-						<a target="_blank" href="#">Instagram: doanprojects</a>
+													<h3>Top Skills:</h3>
+
+						<div class="skills-list">
+							<ul>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Javascript</li>
+								<li>PHP</li>
+							</ul>
+
+							<ul>
+								<li>Wordpress</li>								
+								<li>MySQL</li>
+								<li>Python</li>
+								<li>C# / ASP.NET</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="main-spacer">
 				</div>
+				<div id="projects-anchor" class="anchor"></div>
 				<div class="projects">
 					<h3 style="text-align: center;">Some of my past projects</h3>
 
@@ -117,6 +136,7 @@
 				</div>
 				<div class="main-spacer">
 				</div>
+				<div id="contacts-anchor" class="anchor"></div>
 				<div class="contact">
 
 					<h3 style="text-align: center;">Get In Touch</h3>
@@ -145,7 +165,9 @@
 
 			<div class="bottom-spacer"></div>
 
-			<div class="footer"></div>
+			<div class="footer">
+				<span>&copy; 2020 DivineHTML.   All rights reserved.</span>
+			</div>
 			
 		</div>
 	</body>
