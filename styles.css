@@ -9,14 +9,14 @@ body, html {
 }
 
 h1 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 3em;
+  font-family: monospace;
+  font-size: 4em;
 
 }
 
 h2 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 2em;
+  font-family: monospace;
+  font-size: 3em;
     margin: 5px;
   padding: 5px;
   }
@@ -114,6 +114,10 @@ p {
   padding: 20px;
 }
 
+.divine {
+  font-family: "Dancing Script";
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -180,11 +184,6 @@ body {
 }
 
 
-.grid-layout {
-  display: grid;
-  grid-template-rows: 200px 400px 200px;
-}
-
 .anchor {
     display: block;
     position: relative;
@@ -209,7 +208,7 @@ body {
   text-align: center;
   margin: 20px;
   width: 400px;
-  height: 400px;
+  height: 350px;
 }
 
 .skills-list {
@@ -230,10 +229,10 @@ body {
   margin:20px;
   background-color: white;
   width:400px;
-  height: 400px;
+  height: 300px;
 }
 
-.socials img {
+.left-column img {
   display: block;
   margin: 10px auto;
   border-radius:50%;
@@ -353,9 +352,11 @@ padding: 10px;
   /* The image used */
   
   position: relative;
-  z-index: 0;
+  
   /* Full height */
   height: 20vh; 
+    pointer-events: none;
+
 }
 
 .window > img {
@@ -401,17 +402,25 @@ padding: 10px;
     font-size:30px;
   }
 
-  .top-header, .transition, .window > img {
+  body {
+    background-color: rgb(121 166 234);
+  }
+
+  .top-header, .transition, #scroll-sticker {    
     display: none;
   }
 
+
+
   .fixed-header{
     flex-direction: column;
-    height: 120px;
+    height: 150px;
+    background-image: none;
+    background-color: rgb(121 166 234);
   }
 
   .fixed-transition {
-    top: 120px;
+    display: none;
   }
 
   .title {
@@ -424,7 +433,7 @@ padding: 10px;
   }
 
   .window {
-    height: 300px;
+    height:150px;
   }
 
   .anchor {
@@ -433,6 +442,11 @@ padding: 10px;
 
   .main-section {
     margin: 20px;
+  }
+
+  .main-container {
+        background-color:  rgb(121 166 234);
+        background-image: none;
   }
 
   #subtitle {
