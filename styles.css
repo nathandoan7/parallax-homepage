@@ -78,7 +78,7 @@ p {
   justify-content: space-between;
   color: white;
 
-  background-image: url('images/Mt_Akadake_centered.jpg');
+  background-image: url('images/Mt_Akadake_centered_resized_compressed.jpg');
     /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -97,7 +97,7 @@ p {
   margin: 0 auto;
 
 
-  background-image: url('images/Mt_Akadake_centered.jpg');
+  background-image: url('images/Mt_Akadake_centered_resized_compressed.jpg');
     /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -169,7 +169,7 @@ body {
 .main-container {
   width: 1200px;
   margin: 0 auto;
-  background-image: url('images/Mt_Akadake_centered.jpg');
+  background-image: url('images/Mt_Akadake_centered_resized_compressed.jpg');
   z-index: -1;
     /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -195,10 +195,9 @@ body {
 .about-me {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border-radius: 10px;
   flex-wrap: wrap;
-  overflow:hidden;
+  overflow: hidden;
   background-color: white;
   border: 2px solid rgb(121 166 234);
   margin:10px;
@@ -208,11 +207,28 @@ body {
   text-align: center;
   margin: 20px;
   width: 400px;
-  height: 350px;
 }
 
+.left-column img {
+  display: block;
+  margin: 10px auto;
+  width:230px;
+}
+
+.socials {
+  margin:20px;
+  background-color: white;
+  width:400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+
 .skills-list {
-  margin:10px;
+  margin:20px;
   background-color: rgb(121 166 234);
   padding: 10px;
   border-radius: 10px;
@@ -225,19 +241,14 @@ body {
   list-style: none;
  }
 
-.socials {
-  margin:20px;
-  background-color: white;
-  width:400px;
-  height: 300px;
-}
+ #resume {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(121 166 234);
+ }
 
-.left-column img {
-  display: block;
-  margin: 10px auto;
-  border-radius:50%;
-  width:200px;
-}
+
+
 
 .main-spacer {
   height: 150px;

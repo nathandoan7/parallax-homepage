@@ -7,6 +7,10 @@ fill in the rest of your content - portfolio, contacts, and about me "I'm trying
 
 
 
+I just learned about CSS caching - ESSENTIAL information!  If you want the browser to reload the page from the server instead of reading from the cache, you can hit ctrl + shift + r.  But this still might not reload css and js files.  Google it.
+
+
+
 * you have foolishly set the height on some empty elements just to see them fill up space prematurely, before you've naturally bulked them up with content.  you also did it with grids and grid-row-template: 200px etc etc.  don't do that.  height arises naturally.  not prematurely.  This is why it is important to use a bunch of lorem ipsum text!!!!  get stuff in there sooner than later!
 
 add another fixed div under the header that fades into transparency so that we don't get that shitty sharp edget when you scroll down into the body.
