@@ -63,6 +63,11 @@ p {
   color: white;
 }
 
+.fa-linkedin {
+  background: #007bb5;
+  color: white;  
+}
+
 .fixed-header {
   z-index: 0;
   position: fixed;

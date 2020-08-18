@@ -7,7 +7,17 @@ fill in the rest of your content - portfolio, contacts, and about me "I'm trying
 
 
 
-I just learned about CSS caching - ESSENTIAL information!  If you want the browser to reload the page from the server instead of reading from the cache, you can hit ctrl + shift + r.  But this still might not reload css and js files.  Google it.
+I just learned about CSS caching - ESSENTIAL information!  If you want the browser to reload the page from the server instead of reading from the cache, you can hit ctrl + shift + r.  But this still might not reload css and js files.  Google it.  
+
+your favicon gets cached.  Favicon belongs in the root of your website, not in an images folder.  call it "favicon.ico"
+
+FTP is super sweet.  Reminds me of Git.  when you sync remote->local it is awesome watching the folders and files just pile into your local machine.  awesome.
+
+the config was not obvious.  I got made a successful connection using port 21 and type: ftp.  Filezilla looks easier than sublime text.
+
+FTP Notes - server side there is a default path that you fall into when using ftp.  But in your ft config file (sftp-config.json, on sublime text) there is a remote_path setting.  if you leave it "/" then you will drop into the default path that is specified server side!  If you want to go deeper into the file structure, then you will here specify the second half of the path, with the first half specified server side.  For me, for example, server side I'm dropped into "/home/doanpr5".  Then in my local config file I specify that I want to go into "public_html/".  stick the two halves together to get the whole path.
+
+Note - in this context, the "HOST:" is simply your domain name.  "host": "divinehtml.com",
 
 
 
